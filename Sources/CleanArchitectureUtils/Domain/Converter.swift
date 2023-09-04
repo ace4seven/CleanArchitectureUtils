@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol DomainConverter: AnyObject {
+public protocol DomainConverter: AnyObject {
 
     associatedtype External
     associatedtype Domain
@@ -18,7 +18,7 @@ protocol DomainConverter: AnyObject {
     func convert(external: External) -> Domain
 }
 
-protocol ExternalConverter: AnyObject {
+public protocol ExternalConverter: AnyObject {
 
     associatedtype External
     associatedtype Domain

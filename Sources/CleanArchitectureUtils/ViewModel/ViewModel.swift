@@ -8,7 +8,7 @@
 import SwiftUI
 import Combine
 
-class ViewModel<State: ObservableObject>: ObservableObject {
+public class ViewModel<State: ObservableObject>: ObservableObject {
 
     @Published var state: State
 
